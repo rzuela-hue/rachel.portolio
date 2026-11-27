@@ -1,0 +1,33 @@
+:root{--bg:#fffafb;--ink:#3f2b36;--muted:#6b5460;--accent:#8e4a69;--accent-2:#b97493;--soft:#f8ebef;--line:#ecd9e0}
+*{box-sizing:border-box}
+body{margin:0;font-family:'DM Sans',Arial,sans-serif;font-size:17px;line-height:1.65;color:var(--ink);background:var(--bg)}
+header{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px 24px;padding:16px 5%;border-bottom:1px solid var(--line);background:#fff}
+.logo{font-weight:700;font-size:1.5rem;color:var(--accent);text-decoration:none}
+nav ul{list-style:none;display:flex;flex-wrap:wrap;gap:6px 22px;margin:0;padding:0}
+nav a{color:var(--muted);text-decoration:none;padding:4px 0}
+nav a:hover,nav a[aria-current="page"]{color:var(--accent);border-bottom:2px solid var(--accent)}
+main{max-width:960px;margin:0 auto;padding:32px 5% 56px}
+h1{font-size:2.3rem;line-height:1.2;margin:0 0 12px}
+h2{font-size:1.4rem;margin:0 0 10px}
+h3{font-size:1.1rem;margin:14px 0 2px}
+.accent{color:var(--accent)}
+.hero{background:var(--soft);border-radius:24px;padding:32px;display:flex;flex-wrap:wrap;gap:28px;align-items:center}
+.hero-text{flex:1 1 320px}
+.avatar{width:260px;max-width:100%;border-radius:20px;object-fit:cover;aspect-ratio:3/4}
+.btn{display:inline-block;padding:10px 22px;border-radius:999px;text-decoration:none;background:var(--accent-2);color:#fff;border:1px solid var(--accent-2);margin:4px 8px 4px 0}
+.btn.alt{background:transparent;color:var(--accent)}
+.btn:hover{background:var(--accent);color:#fff}
+.card{background:#fff;border:1px solid var(--line);border-radius:20px;padding:22px 26px;margin-top:20px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.grid .card{margin-top:20px}
+ul,ol{padding-left:22px;margin:6px 0}
+.skill{display:flex;flex-wrap:wrap;align-items:center;gap:6px 14px;margin:10px 0}
+.skill span:first-child{flex:1 1 160px}
+.bar{flex:2 1 160px;height:10px;background:var(--soft);border-radius:99px;overflow:hidden}
+.bar i{display:block;height:100%;background:var(--accent)}
+.badge{font-size:.9rem;color:var(--accent);min-width:100px}
+.photos{display:flex;flex-wrap:wrap;gap:14px}
+.photos img{width:200px;max-width:100%;border-radius:14px}
+a{color:var(--accent)}
+footer{text-align:center;background:var(--soft);color:var(--muted);padding:24px 5%}
+@media(max-width:700px){.grid{grid-template-columns:1fr}h1{font-size:1.8rem}.hero{padding:22px}}
